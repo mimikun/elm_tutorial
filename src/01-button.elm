@@ -37,8 +37,8 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ button [ onClick Decrement ] [text "-"]
+        [ button [ onClick Decrement ] [text "デクリメント"]
         , div [] [text (toString model) ]
-        , button [ onClick Increment ] [text "+"]
-        , button [ onClick Reset ] [text "reset"]
+        , button [ onClick Increment ] [text "インクリメント"]
+        , button [ onClick Reset ] [text "リセット"]
         ]
